@@ -26,7 +26,9 @@ class App extends Component {
           <Switch>
             <Route 
               exact path='/'
-              component={Home} />
+              render={
+                (props) => <Home history={props.history}/>
+              } />
             <Route 
               path='/about'
               render={
