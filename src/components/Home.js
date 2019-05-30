@@ -7,6 +7,7 @@ class Home extends React.Component {
 
   goContact = () => {
     this.props.history.push('/contact')
+    // this.props.history.goBack()
   }
 
   render() {
